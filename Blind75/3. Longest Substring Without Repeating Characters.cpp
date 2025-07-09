@@ -5,7 +5,7 @@ class Solution {
             int max_len = 0, start = 0;
     
             for (int i = 0; i < s.length(); i++) {
-                if (last_index.count(s[i]) && last_index[s[i]] >= start) {
+                if (last_index.count(s[i]) && last_index[s[i]] >= start) { // '=' -> duplicate at first char
                     start = last_index[s[i]] + 1;
                 }
     
